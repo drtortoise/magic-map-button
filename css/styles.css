@@ -1,0 +1,151 @@
+/*----------------------- reset ----------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------- Main ----------------------*/
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 auto;
+	text-align:center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: georgia,serif;
+    margin: 0;
+	font-size:2.6em;
+	line-height:3em;
+}
+h1 {
+	text-align:center;
+}
+p {
+	font-size:1.6em;
+	line-height:2em;
+}
+header {
+	background:#919191;
+	color:#fff;
+}
+.level {
+	margin: 0 auto;
+	clear:both;
+	background:#c8e2e3;
+	width:100%;
+	padding:40px 0;
+	font-size:1.6em;
+}
+.level li {
+	display:inline-block;
+	margin:10px;
+	width:250px;
+	height:200px;
+	background:url("../img/placeholder.png");
+	line-height:200px;
+	border:3px solid #c8e2e3;
+}
+.level li.current {
+	border:3px solid #dd7148;
+}
+.level li:hover, .level li:focus, .level li:active {
+	border:3px solid #df8152;
+}
+form {
+	clear:both;
+	background:#badadb;
+}
+/*----------------------- MAP ----------------------*/
+.map {
+  clear:both;
+  position: relative;
+  overflow: hidden;
+  color: #4CC5DC;
+  margin: 0 auto;
+}
+
+.layer {
+  position: absolute;
+}
+
+.tile {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+}
+
+.tile path {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.tile .water {
+  fill: #4CC5DC;
+  stroke: none;
+  /*polygon-gamma: 0.6;*/
+}
+
+.tile .ocean
+{
+  fill: #4CC5DC;
+  stroke: none;
+}
+
+.tile .major_road { stroke: #776; }
+.tile .minor_road { stroke: #ccb; }
+.tile .highway { stroke: #f39; stroke-width: 1.5px; }
+.tile .rail { stroke: #7de; }
+.tile .river{stroke: #007f7f;}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
